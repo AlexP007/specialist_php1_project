@@ -19,13 +19,12 @@ switch ($page) {
     case 'portfolio':
         $page = 'portfolio.php';
         break;
-    case 'blog':
-        $page = 'blog.php';
-        break;
     case 'contacts':
         $page = 'contacts.php';
         break;
 }
+
+$active = 'font-orange';
 
 ?>
 <!doctype html>
@@ -51,10 +50,13 @@ switch ($page) {
             <div class="head">
                 <nav>
                     <ul>
-                        <li><a href="/?p=resume" class="lnk">Резюме</a></li>
-                        <li><a href="/?p=portfolio" class="lnk">Портфолио</a></li>
-                        <li><a href="/?p=blog" class="lnk">Блог</a></li>
-                        <li><a href="/?p=contacts" class="lnk">Контанты</a></li>
+                        <?php foreach ($navigation as $item): ?>
+                            <li>
+                                <a href="/?p=<?= $item['link'] ?>"
+                                   class="lnk <?= "{$item['link']}.php" === $page ? $active : ""  ?>">
+                                    <?= $item['name'] ?></a>
+                            </li>
+                        <?endforeach;?>
                     </ul>
                 </nav>
             </div>
