@@ -53,8 +53,10 @@ $active = 'font-orange';
                         <?php foreach ($navigation as $item): ?>
                             <li>
                                 <a href="/?p=<?= $item['link'] ?>"
-                                   class="lnk <?= "{$item['link']}.php" === $page ? $active : ""  ?>">
-                                    <?= $item['name'] ?></a>
+                                   class="lnk <?= "{$item['link']}.php" === $page ? $active : ""  ?>"
+                                >
+                                   <?= $item['name'] ?>
+                                </a>
                             </li>
                         <?endforeach;?>
                     </ul>
