@@ -1,3 +1,33 @@
+<?php
+
+include 'lib/data.php';
+
+$fullName = "{$me['name']} {$me['surname']}";
+
+$page = 'main';
+if (isset($_GET['p'])) {
+    $page = $_GET['p'];
+}
+
+switch ($page) {
+    case 'main':
+        $page = 'main.php';
+        break;
+    case 'resume':
+        $page = 'resume.php';
+        break;
+    case 'portfolio':
+        $page = 'portfolio.php';
+        break;
+    case 'blog':
+        $page = 'blog.php';
+        break;
+    case 'contacts':
+        $page = 'contacts.php';
+        break;
+}
+
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -5,7 +35,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Резюме - {{имя}}</title>
+    <title>Резюме - <?= $fullName ?></title>
     <!-- CSS -->
     <link href="assets/style.css" rel="stylesheet">
     <!-- Load Fonts -->
@@ -32,15 +62,12 @@
 
         <main>
             <div class="main__center">
-               <div class="main__center-smallbox">
-                   <h1>Привет! Меня зовут Александр Пантелеев</h1>
-                   <p>Я профессиональный разработчик php</p>
-               </div>
+               <?php include "pages/$page"?>
             </div>
         </main>
 
         <footer>
-            <small class="copy">© {{Дата}} {{имя}}</small>
+            <small>© <?= date('Y') ?> <?= $fullName ?></small>
         </footer>
     </div>
     <!-- end Wrapper -->
