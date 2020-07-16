@@ -42,7 +42,7 @@ $active = 'font-orange';
 </head>
 <body>
 <!-- Container -->
-<div class="container roboto bcg-orange">
+<div class="container roboto bcg-green">
     <!-- Wrapper -->
     <div class="wrapper bcg-white">
 

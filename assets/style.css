@@ -1,5 +1,5 @@
 :root {
-    --orange: #f26b38;
+    --green: #4caf50;
     --purple: #9c27b0;
     --white: #fff;
     --dark-grey: #363636;
@@ -8,9 +8,8 @@
 }
 
 /* COLORS */
-
-.bcg-orange {
-    background-color: var(--orange);
+.bcg-green {
+    background-color: var(--green);
 }
 .bcg-purple {
     background-color: var(--purple);
@@ -19,8 +18,8 @@
     background-color: var(--white);
 }
 
-.font-orange {
-    color: var(--orange);
+.font-green {
+    color: var(--green);
 }
 .font-purple {
     color: var(--purple);
