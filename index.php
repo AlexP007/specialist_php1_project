@@ -47,21 +47,19 @@ $active = 'font-orange';
     <div class="wrapper bcg-white">
 
         <header>
-            <div class="head">
-                <nav>
-                    <ul>
-                        <?php foreach ($navigation as $item): ?>
-                            <li>
-                                <a href="/?p=<?= $item['link'] ?>"
-                                   class="lnk <?= "{$item['link']}.php" === $page ? $active : ""  ?>"
-                                >
-                                   <?= $item['name'] ?>
-                                </a>
-                            </li>
-                        <?endforeach;?>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <ul>
+                    <?php foreach ($navigation as $item): ?>
+                        <li>
+                            <a href="/?p=<?= $item['link'] ?>"
+                               class="lnk <?= "{$item['link']}.php" === $page ? $active : ""  ?>"
+                            >
+                               <?= $item['name'] ?>
+                            </a>
+                        </li>
+                    <?endforeach;?>
+                </ul>
+            </nav>
         </header>
 
         <main>
