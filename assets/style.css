@@ -1,0 +1,125 @@
+:root {
+    --orange: #f26b38;
+    --purple: #9c27b0;
+    --white: #fff;
+    --dark-grey: #363636;
+    --grey: #999999;
+    --font-black: #141414;
+}
+
+/* COLORS */
+
+.bcg-orange {
+    background-color: var(--orange);
+}
+.bcg-purple {
+    background-color: var(--purple);
+}
+.bcg-white {
+    background-color: var(--white);
+}
+
+.font-orange {
+    color: var(--orange);
+}
+.font-purple {
+    color: var(--purple);
+}
+
+/* FONTS */
+.roboto {
+    font-family: 'Roboto Mono';
+}
+
+/* UTILS */
+.align-center {
+    text-align: center;
+}
+
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+h1 {
+    font-size: 48px;
+    color: var(--font-black);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: var(--font-black);
+    letter-spacing: 0.1em;
+}
+
+small {
+    font-size: 10px;
+}
+
+/* LAYOUT */
+.container {
+    height: calc(100vh - 60px);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.wrapper {
+    padding: 0 30px;
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12px 24px;
+}
+
+.lnk {
+    font-size: 14px;
+    margin-left: 36px;
+}
+
+footer {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    color: var(--grey);
+}
+
+/* MAIN */
+main {
+    box-sizing: border-box;
+    padding: 60px 30px;
+    height: 85%;
+}
+
+.main__center {
+    height: 100%;
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__center-smallbox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* END MAIN */
+
+
