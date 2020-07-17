@@ -75,5 +75,8 @@ $active = 'font-orange';
     <!-- end Wrapper -->
 </div>
 <!-- end Container -->
+<!-- JS -->
+<script src="assets/js/jQuery.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

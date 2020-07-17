@@ -140,7 +140,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 15%;
+    margin-bottom: 15vh;
 }
 
 .main__center-heading {
