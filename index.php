@@ -39,6 +39,8 @@ $active = 'font-orange';
     <link href="assets/style.css" rel="stylesheet">
     <!-- Load Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
+    <!-- Icons -->
+    <link href="pages/ionicons.css" rel="stylesheet">
 </head>
 <body>
 <!-- Container -->
