@@ -1,6 +1,7 @@
 :root {
     --green: #4caf50;
     --purple: #9c27b0;
+    --pink: #ff4081;
     --white: #fff;
     --dark-grey: #363636;
     --grey: #999999;
@@ -14,6 +15,9 @@
 .bcg-purple {
     background-color: var(--purple);
 }
+.bcg-pink {
+    background-color: var(--pink);
+}
 .bcg-white {
     background-color: var(--white);
 }
@@ -23,6 +27,9 @@
 }
 .font-purple {
     color: var(--purple);
+}
+.font-pink {
+    color: var(--pink);
 }
 
 /* FONTS */
