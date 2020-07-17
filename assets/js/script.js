@@ -10,7 +10,7 @@
         }
     });
     // smooth transition
-    $("a[href^='#']").on("click", function(e) {
+    main.find("a[href^='#']").on("click", function(e) {
         e.preventDefault();
         let hash = this.hash;
         main.stop().animate({
