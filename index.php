@@ -36,11 +36,11 @@ $active = 'font-orange';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Резюме - <?= $fullName ?></title>
     <!-- CSS -->
-    <link href="assets/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <!-- Load Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
     <!-- Icons -->
-    <link href="assets/ionicons.css" rel="stylesheet">
+    <link href="assets/css/ionicons.css" rel="stylesheet">
 </head>
 <body>
 <!-- Container -->
