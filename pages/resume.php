@@ -3,10 +3,10 @@
         <h1 class="align-center">Моё Резюме</h1>
     </div>
 </div>
-<a href="#" class="mouse_btn font-green">
+<a href="#section" class="mouse_btn font-green">
     <span class="ion ion-mouse"></span>
 </a>
-<div class="section about">
+<div id="section" class="section about">
     <div class="content">
         <div class="title">
             <div class="title_inner">About Me</div>
