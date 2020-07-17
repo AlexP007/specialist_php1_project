@@ -53,10 +53,10 @@ $active = 'font-orange';
                 <ul>
                     <?php foreach ($navigation as $item): ?>
                         <li>
-                            <a href="/?p=<?= $item['link'] ?>"
-                               class="lnk <?= "{$item['link']}.php" === $page ? $active : ""  ?>"
+                            <a href="/?p=<?=$item['link']?>"
+                               class="lnk <?="{$item['link']}.php" === $page ? $active : ""?>"
                             >
-                               <?= $item['name'] ?>
+                               <?=$item['name']?>
                             </a>
                         </li>
                     <?endforeach;?>
@@ -71,7 +71,7 @@ $active = 'font-orange';
         </main>
 
         <footer>
-            <small>© <?= date('Y') ?> <?= $fullName ?></small>
+            <small>© <?= date('Y') ?> <?=$fullName?></small>
         </footer>
     </div>
     <!-- end Wrapper -->
