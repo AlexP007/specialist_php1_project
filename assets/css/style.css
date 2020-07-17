@@ -1,3 +1,4 @@
+/* VARS */
 :root {
     --green: #4caf50;
     --purple: #9c27b0;
@@ -6,6 +7,12 @@
     --dark-grey: #363636;
     --grey: #999999;
     --font-black: #141414;
+}
+/* KEYFRAMES */
+@keyframes animate-mouse-btn {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-20%)}
+    100% {transform: translateY(0)}
 }
 
 /* COLORS */
@@ -83,6 +90,8 @@ small {
     left: 50%;
     bottom: 80px;
     margin-left: -10px;
+    animation: animate-mouse-btn 1.5s infinite;
+
 }
 
 /* LAYOUT */
