@@ -16,8 +16,8 @@ switch ($page) {
     case 'resume':
         $page = 'resume.php';
         break;
-    case 'portfolio':
-        $page = 'portfolio.php';
+    case 'blog':
+        $page = 'blog.php';
         break;
     case 'contacts':
         $page = 'contacts.php';

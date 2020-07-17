@@ -13,6 +13,6 @@ $me = [
 $navigation = [
     ['link' => 'main', 'name' => 'Главная'],
     ['link' => 'resume', 'name' => 'Резюме'],
-    ['link' => 'portfolio', 'name' => 'Портфолио'],
-    ['link' => 'contacts', 'name' => 'Контанты'],
+    ['link' => 'blog', 'name' => 'Блог'],
+    ['link' => 'contacts', 'name' => 'Контакты'],
 ];
