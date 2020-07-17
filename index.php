@@ -1,30 +1,5 @@
+
 <?php
-
-include 'lib/data.php';
-
-$fullName = "{$me['name']} {$me['surname']}";
-
-$page = 'main';
-if (isset($_GET['p'])) {
-    $page = $_GET['p'];
-}
-
-switch ($page) {
-    case 'main':
-        $page = 'main.php';
-        break;
-    case 'resume':
-        $page = 'resume.php';
-        break;
-    case 'blog':
-        $page = 'blog.php';
-        break;
-    case 'contacts':
-        $page = 'contacts.php';
-        break;
-}
-
-$active = 'font-orange';
 
 ?>
 <!doctype html>
@@ -34,7 +9,7 @@ $active = 'font-orange';
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Резюме - <?= $fullName ?></title>
+    <title>Резюме - {{Имя}} {{Фамилия}}</title>
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Load Fonts -->
@@ -51,25 +26,27 @@ $active = 'font-orange';
         <header>
             <nav>
                 <ul>
-                    <?php foreach ($navigation as $item): ?>
-                        <li>
-                            <a href="/?p=<?=$item['link']?>"
-                               class="lnk <?="{$item['link']}.php" === $page ? $active : ""?>"
-                            >
-                               <?=$item['name']?>
-                            </a>
-                        </li>
-                    <?endforeach;?>
+                    <li><a href="/?p=main" class="lnk">Главная</a></li>
+                    <li><a href="/?p=resume" class="lnk">Резюме</a></li>
+                    <li><a href="/?p=portfolio" class="lnk">Портфолио</a></li>
+                    <li><a href="/?p=contacts" class="lnk">Контанты</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <?php include "pages/$page"?>
+            <div class="main__center">
+                <div class="main__center">
+                    <div class="main__center-smallbox">
+                        <h1>Привет! Меня зовут {{Имя}} {{Фамилия}}</h1>
+                        <p>Я {{Профессия}}</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
-            <small>© <?= date('Y') ?> <?=$fullName?></small>
+            <small>© {{Текущий год}} {{Имя}} {{Фамилия}}</small>
         </footer>
     </div>
     <!-- end Wrapper -->
