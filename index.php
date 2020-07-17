@@ -65,9 +65,7 @@ $active = 'font-orange';
         </header>
 
         <main>
-            <div class="main__center">
-               <?php include "pages/$page"?>
-            </div>
+            <?php include "pages/$page"?>
         </main>
 
         <footer>

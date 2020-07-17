@@ -103,7 +103,6 @@ small {
 
 .wrapper {
     padding: 0 30px;
-    overflow-y: scroll;
     height: 100%;
     position: relative;
 }
@@ -131,6 +130,7 @@ main {
     box-sizing: border-box;
     padding: 60px 30px;
     height: 85%;
+    overflow-y: scroll;
 }
 
 .main__center {
@@ -140,6 +140,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 15%;
 }
 
 .main__center-heading {
