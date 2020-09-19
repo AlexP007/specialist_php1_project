@@ -4,7 +4,7 @@
     </div>
 
     <section>
-        <form method="post">
+        <form method="POST">
             <div class="contacts__form-group">
                 <input type="text" name="form_text_1" placeholder="Имя*">
             </div>
